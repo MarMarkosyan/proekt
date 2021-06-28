@@ -1,0 +1,8 @@
+body {
+	margin: 0;
+	font: normal 16px/20px Arial, sans-serif;
+}
+.container {
+	max-width: 120px;
+	margin: 0 auto;
+}
