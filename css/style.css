@@ -21,7 +21,8 @@ body {
 /* header */
 header {
 	flex:none;
-	height:100%;
+    width: 100%;
+	position: fixed;
 }
 .topheader {
 	background: #fff;
@@ -35,8 +36,10 @@ header {
 .socials__link {
 	width: 20px;
     height: 20px;
-	display: inline-block;	
-    background-position: 50%;
+	display: flex;	
+}
+img {
+	padding: 0 0 0 20px;
 }
 .bottomheader {
 	background: #CCCCFF; 
@@ -80,9 +83,13 @@ a {
 }
 /*main*/
 main {
-	flex: 1 1 auto;
-	height: 100px;
-	
+	flex:1 0 auto;
+	position:relative;
+	background: #fff;
+}
+.container__catalog {
+	margin: 0;
+	width: 100px;
 }
 /*footer*/
 footer {
@@ -104,7 +111,9 @@ footer {
     justify-content: space-between;
     display: flex;
     align-items: center;
-	border-top: #6c757d 2px solid;
+}
+.topfooter {
+	border-top: #6c757d 2px solid;	
 }
 .contacts .span {
 	font-size:5px;
@@ -115,4 +124,55 @@ footer {
 }
 .footermenupoint :hover{
 	color:black:
+}
+/*aside*/
+aside{
+	flex:none;
+	width: 300px;
+	background:#fff;
+}
+.catmenu {
+	padding: 30px 40px;
+}
+.catmenu_item {
+	padding: 15px 20px 15px;
+	position: relative;
+	border-bottom: 1px solid #6c757d;
+}
+.catmenu_item:before {
+	color:black;
+	position: absolute;
+	left: 0;
+}
+.catmenu_item a {
+	display: block;
+	color: black;
+	text-decoration: none;
+}
+.catmenu_item a:hover {
+	text-decoration: underline;
+}
+.submenu_mover {
+	position: absolute;
+	right: 0;
+	top: 0;
+	margin: 15px;
+	cursor: pointer;
+	transition: all 1s ease;
+	color: black;
+}
+.open .submenu_mover {
+	transform: rotate(180deg);
+}
+.submenu {
+	height: 0;
+	overflow: hidden;
+}
+.submenu a {
+	position: relative;
+	padding-left: 20px;
+}
+.submenu a:before {
+	position: absolute;
+	left: 0;
 }
