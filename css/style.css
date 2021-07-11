@@ -1,33 +1,118 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;1,300;1,400&display=swap');
+html{
+	height:100%;
+}
 body {
+	height:100%;
 	margin: 0;
 	font-family: 'Ubuntu', sans-serif;
+	font-weight:400;
 }
 .container {
 	width: 1168px;
 	margin: 0 auto;
+	padding: 16px;
 }
 .wrapper {
 	display: flex;
 	flex-direction: column;
-    min-height: 100vh;
+    min-height: 100%;
 }
+/* header */
 header {
-	
+	flex:none;
+	height:100%;
 }
 .topheader {
 	background: #fff;
 }
-.bottomheader {
-	background: #F9C;
-	height: 50px;
+.topheader .container{
+	flex-direction: row;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
 }
+.socials__link {
+	width: 20px;
+    height: 20px;
+	display: inline-block;	
+    background-position: 50%;
+}
+.bottomheader {
+	background: #CCCCFF; 
+	height: 60px;
+	padding:0 0;
+}
+.topmenu{
+	text-align:center;
+	line-height: 60px;
+	padding:0 0;
+}
+.menupoint {
+	display: inline-block;
+	position: relative;
+	margin: 0 40px;
+}
+a {
+	color: black;
+	text-decoration: none;
+}
+.menupoint > span {
+	display: none;
+	position: absolute;
+	top: 50px;
+	left: 0;
+	width: 120px;
+	padding: 20px 0 5px;
+	box-shadow: 1px 2px 5px rgba(0,0,0,.4);
+	border-radius:7px;
+	z-index:1;
+}
+.menupoint:hover > span,
+.menupoint > span:hover {
+	display: block;
+}
+.menupoint:hover .line-point {
+	color:#black;
+}
+.pulldown-point:hover {
+	color: #CCCCFF;
+}
+/*main*/
 main {
 	flex: 1 1 auto;
 	height: 100px;
 	
 }
+/*footer*/
 footer {
-	background: #F9C;
-	height: 50px;
+	flex:none;
+	height:auto;
+}
+.footer .container {
+	flex-direction: row;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+}
+.bottomfooter {
+	background: #CCCCFF; 
+	height: 30px;
+}
+.topfooter .container{
+	flex-direction: row;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+	border-top: #6c757d 2px solid;
+}
+.contacts .span {
+	font-size:5px;
+}
+.footermenupoint{
+	display:flex;
+	flex-direction:column;
+}
+.footermenupoint :hover{
+	color:black:
 }
