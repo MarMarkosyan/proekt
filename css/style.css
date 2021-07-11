@@ -12,6 +12,7 @@ body {
 	width: 1168px;
 	margin: 0 auto;
 	padding: 16px;
+	display: flex;
 }
 .wrapper {
 	display: flex;
@@ -22,7 +23,6 @@ body {
 header {
 	flex:none;
     width: 100%;
-	position: fixed;
 }
 .topheader {
 	background: #fff;
@@ -90,6 +90,11 @@ main {
 .container__catalog {
 	margin: 0;
 	width: 100px;
+	display: flex;
+}
+main .contacts {
+	padding: 20px 0 0 80px;
+	
 }
 /*footer*/
 footer {
@@ -105,6 +110,9 @@ footer {
 .bottomfooter {
 	background: #CCCCFF; 
 	height: 30px;
+}
+.bottomfooter .socials__link {
+	margin: auto;
 }
 .topfooter .container{
 	flex-direction: row;
