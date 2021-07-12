@@ -60,16 +60,23 @@ a {
 	color: black;
 	text-decoration: none;
 }
+a.pulldown-point {
+	white-space: wrap;
+	text-decoration: center;
+	display: black;
+}
 .menupoint > span {
 	display: none;
 	position: absolute;
 	top: 50px;
 	left: 0;
+	right: 0;
 	width: 120px;
 	padding: 20px 0 5px;
 	box-shadow: 1px 2px 5px rgba(0,0,0,.4);
 	border-radius:7px;
 	z-index:1;
+	background: white;
 }
 .menupoint:hover > span,
 .menupoint > span:hover {

@@ -1,4 +1,3 @@
-
 const order = [
     {
         id: 5711,
@@ -14,8 +13,8 @@ const order = [
     }
 ];
 function tovarDelete(point) {
-    let b = point.parentNode.parentNode;
-    let t_id = b.querySelector('th').dataset.tovar;
+    let b = point.parentNode.parentNode; // нашли строку, в которой лежит наш товар
+    let t_id = b.querySelector('th').dataset.tovar; // находим id товара
     for (let i = 0; i < order.length; i++) {
         if (order[i].id == t_id) {
             order.splice(i, 1);

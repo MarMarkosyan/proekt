@@ -81,4 +81,7 @@ $(function(){
         $('.main-image').on('click', 'img', seebigimage);
         $('.small-image').on('click', 'img', changeimage);
     }
+	$ ('.del > div).click(function(){
+		tovarDelete(this);
+	})
 });
