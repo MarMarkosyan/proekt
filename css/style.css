@@ -44,7 +44,7 @@ img {
 .bottomheader {
 	background: #CCCCFF; 
 	height: 60px;
-	padding:0 0;
+	padding:0 0 0 300px;
 }
 .topmenu{
 	text-align:center;
@@ -61,9 +61,9 @@ a {
 	text-decoration: none;
 }
 a.pulldown-point {
-	white-space: wrap;
-	text-decoration: center;
-	display: black;
+	white-space: normal;
+	text-decoration: none;
+	display: block;
 }
 .menupoint > span {
 	display: none;
@@ -103,6 +103,63 @@ main .contacts {
 	padding: 20px 0 0 80px;
 	
 }
+.del > div {
+	width: 18px;
+    height: 18px;
+    border-radius: 18px;
+    text-align: center;
+    font: normal 18px/18px Arial;
+    transform: rotate(45deg);
+    transform-origin: center;
+    background: #fc7979;
+    color: white;
+    cursor: pointer;
+}
+main .container {
+    width: 600px;
+    margin: 0 auto;
+	display: flex;
+}
+.slider {
+    position: relative;
+    width: 600px;
+    height: 300px;
+    overflow: hidden;
+}
+.slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.rule {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: none;
+}
+.slider:hover .rule {
+    display: block;
+}
+.rule span {
+    position: absolute;
+    top: calc(50% - 17px);
+    cursor: pointer; /* курсор показывает, что тут активный элемент */
+    user-select: none; /* запрещаем выделение текста - кнопка не "синеет", как по ней ни кликай*/
+    font-size: 30px;
+    width: 34px;
+    text-align: center;
+    border-radius: 50%;
+    background: rgba(255,255,255,.5);
+}
+.left {
+    left: 5%;
+}
+.right {
+    right: 5%;
+}
+
 /*footer*/
 footer {
 	flex:none;
@@ -119,7 +176,7 @@ footer {
 	height: 30px;
 }
 .bottomfooter .socials__link {
-	margin: auto;
+	padding:0 0 0 40px;
 }
 .topfooter .container{
 	flex-direction: row;

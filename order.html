@@ -3,14 +3,14 @@
 	<head>
 		<meta charset="utf-8">
 		<title>Order</title>
-		<link rel="stylesheet" href="css/style.css">
 		<link rel="stylesheet" href="css/bootstrap.css">
+		<link rel="stylesheet" href="css/style.css">
 		<script src="js/jquery-3.6.0.min.js"></script>
 		<script src="js/bootstrap.bundle.js"></script>
 		<script src="js/jquery.mask.js"></script>
 		<script src="js/order.js"></script>
 		<script src="js/calendar.js"></script>
-		<script src="js/script.js"></script>
+		<script src="js/scripts.js"></script>
 	</head>
 <body>
 	<div class="wrapper">
@@ -75,7 +75,7 @@
                                 <a href="#">Консилер</a>
                                 <a href="#">Праймер</a>
                             </div>
-                            <div class="submenu_mover">V</div>
+                            <div class="submenu_mover">v</div>
                         </div>
                         <div class="catmenu_item">
                             <a href="#">Для глаз</a>
@@ -84,7 +84,7 @@
                                 <a href="#">Подводка</a>
 								<a href="#">Тушь</a>
                             </div>
-                            <div class="submenu_mover">V</div>
+                            <div class="submenu_mover">v</div>
                         </div>
                         <div class="catmenu_item">
                             <a href="#">Для губ</a>
@@ -92,7 +92,7 @@
                                 <a href="#">Карандаш</a>
                                 <a href="#">Помада</a>
                             </div>
-                            <div class="submenu_mover">V</div>
+                            <div class="submenu_mover">v</div>
                         </div>
                         <div class="catmenu_item">
                             <a href="#">Уход</a>
@@ -101,11 +101,11 @@
                 </aside>
 				<div class="order">
                     <h1>Корзина</h1>
-                    <p class="nihil">Ваша корзина пуста.</p>
+                    <p class="nihil"></p>
                     <table class="table">
                         <thead>
                             <tr>
-                                <th scope="col">#</th>
+                                <th scope="col"></th>
                                 <th scope="col">Наименование</th>
                                 <th scope="col">Количество</th>
                                 <th scope="col">Цена</th>
@@ -116,36 +116,36 @@
                         <tbody>
                             <tr>
                                 <th scope="row" data-tovar="5711">1</th>
-                                <td>Товар 1</td>
+                                <td>Тональный крем</td>
                                 <td class="num">
-                                    <input type="number" value="10" pattern="^[0-9]*$">
+                                    <input type="number" value="1" pattern="^[0-9]*$">
                                 </td>
-                                <td class="rub">5</td>
-                                <td class="sum">50</td>
+                                <td class="rub">750р</td>
+                                <td class="sum">750р</td>
                                 <td class="del">
                                     <div>+</div>
                                 </td>
                             </tr>
                             <tr>
                                 <th scope="row" data-tovar="3432">2</th>
-                                <td>Товар 2</td>
+                                <td>Карандаш для глаз</td>
                                 <td class="num">
-                                    <input type="number" value="10" pattern="^[0-9]*$">
+                                    <input type="number" value="1" pattern="^[0-9]*$">
                                 </td>
-                                <td class="rub">10</td>
-                                <td class="sum">100</td>
+                                <td class="rub">102р</td>
+                                <td class="sum">102р</td>
                                 <td class="del">
                                     <div>+</div>
                                 </td>
                             </tr>
                             <tr>
                                 <th scope="row" data-tovar="4846">3</th>
-                                <td>Товар 3</td>
+                                <td>Помада</td>
                                 <td class="num">
-                                    <input type="number" value="10" pattern="^[0-9]*$">
+                                    <input type="number" value="1" pattern="^[0-9]*$">
                                 </td>
-                                <td class="rub">15</td>
-                                <td class="sum">150</td>
+                                <td class="rub">500р</td>
+                                <td class="sum">500р</td>
                                 <td class="del">
                                     <div>+</div>
                                 </td>
@@ -154,7 +154,7 @@
                         <tfoot>
                             <tr>
                                 <th scope="row">Итого</th>
-                                <td colspan="5" class="allsum">300</td>
+                                <td colspan="5" class="allsum">1352р</td>
                             </tr>
                         </tfoot>
                     </table>
