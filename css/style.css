@@ -250,3 +250,12 @@ aside{
 	position: absolute;
 	left: 0;
 }
+.num input {
+    border: 0;
+    width: 50px;
+}
+/*order*/
+
+.rub:after, .sum:after, .allsum:after {
+    content: ' \20bd';
+}
