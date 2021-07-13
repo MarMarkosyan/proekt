@@ -51,6 +51,16 @@ $(function(){
             $('.basket').html("Войти");
         }
     });
+	
+	$('#date').click(function(){
+        if ($('#date').val()) {
+            selected_day = makeSelectedDate($('#date').val());
+            makePopup(selected_day.getFullYear(),selected_day.getMonth());
+        } else {
+            makePopup(TODAY.getFullYear(),TODAY.getMonth());
+        }
+        $('#date').mask('00-00-0000');
+    });
     
     $(document).on('click', '.order .del > div', function(){
         tovarDelete(this);
@@ -77,6 +87,7 @@ $(function(){
         e.preventDefault();
         orderAction();
     })
+/*product*/
 	 if ($('.product').length) {
         $('.main-image').on('click', 'img', seebigimage);
         $('.small-image').on('click', 'img', changeimage);

@@ -1,6 +1,6 @@
 function seebigimage() {
     // получаем адрес большой картинки
-    let imageurl = document.querySelector('.main-image img').src.split('_medium.png').join('_big.jpg'||'big.jpeg');
+    let imageurl = document.querySelector('.main-image img').src.split('_medium.jpg').join('_big.jpg'||'big.jpeg');
     
     // вставляем в попап верстку и адрес для картинки, а также кнопку-крестик для уборки попапа
     document.querySelector('.popup-desk').innerHTML = '<div class="popup lightbox"><img src="' + imageurl + '"><div class="cross">+</div></div>';
