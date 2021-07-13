@@ -101,7 +101,6 @@ main {
 }
 main .contacts {
 	padding: 20px 0 0 80px;
-	
 }
 .del > div {
 	width: 18px;
@@ -161,7 +160,20 @@ main .container {
 .right {
     right: 5%;
 }
-
+.cat_block {
+    flex: 1 1 auto;
+    display: flex;
+    align-content: flex-start;
+    gap: 50px;
+}
+.cat_unit {
+	height: 200px;
+    width: 200px;
+	padding: 20px 0 0 0;
+}
+p {
+	text-align: center;
+}
 /*footer*/
 footer {
 	flex:none;
@@ -258,4 +270,7 @@ aside{
 
 .rub:after, .sum:after, .allsum:after {
     content: ' \20bd';
+}
+.table {
+	width: 700px;
 }
