@@ -192,10 +192,10 @@ main .container {
     background: #E7CAC3; 
     border: #714444 2px solid;
     border-radius: 10px;
-	width: 600px;
+	width: 490px;
 }
 .gallery {
-	width: 600px;
+	width: 490px;
     margin-top: 10px;
     display: flex;
     justify-content: space-between;
