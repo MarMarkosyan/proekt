@@ -75,7 +75,7 @@ a.pulldown-point {
 	padding: 20px 0 5px;
 	box-shadow: 1px 2px 5px rgba(0,0,0,.4);
 	border-radius:7px;
-	z-index:1;
+	z-index:20;
 	background: white;
 }
 .menupoint:hover > span,
@@ -96,7 +96,6 @@ main {
 }
 .container__catalog {
 	margin: 0;
-	width: 100px;
 	display: flex;
 }
 main .contacts {
@@ -125,14 +124,16 @@ main .container {
 }
 .slider {
     position: relative;
-    width: 100px;
-    height: 50px;
+    width: 564px;
+    height: 376px;
     overflow: hidden;
+	margin-left: auto;
+    margin-right: auto;
 }
-.slide .slide img{
+.slide {
     position: absolute;
-	width: 100px;
-	height: 50px;
+	width: 564px;
+	height: 376px;
     top: 0;
     left: 0;
 }
@@ -194,6 +195,9 @@ main .container {
     border-radius: 10px;
 	width: 490px;
 }
+.main-image img {
+	padding-left: 57px;
+}
 .gallery {
 	width: 490px;
     margin-top: 10px;
@@ -206,16 +210,10 @@ main .container {
     border: #714444 2px solid;
     border-radius: 5px;
 }
-.main_image img {
-    margin-left: auto;
-    margin-right: auto;
-	height: 380px;
-	width: 350px;
-}
 h5 {
     margin: 25px 8px 8px 8px;
 }
-.small_image img {
+.small-image img {
 	height: 200px;
 	width: 150px;
 }
@@ -373,6 +371,33 @@ aside{
 .popup-desk.active {
 	display: block;
 	z-index: 3;
+}
+.popup.lightbox{
+	background: white;
+	height: 500px;
+	width: 500px;
+}
+.lightbox {
+	left: 30px;
+	right: 30px;
+	top: 30px;
+	bottom: 30px;
+	width: auto;
+	margin: 0 auto;
+}
+.lightbox img {
+	max-width: 100%;
+	max-height: 100%;
+	margin: 0 auto;
+}
+.cross {
+	position: absolute;
+	right: 10px;
+	top: 5px;
+	color: black;
+	font: bold 30px Arial;
+	transform: rotate(45deg);
+	cursor: pointer;
 }
 #name, #date, #address, #email, #comment {
     display: block;

@@ -2,15 +2,12 @@
 <html>
 	<head>
 		<meta charset="utf-8">
-		<title>Корзина</title>
+		<title>Каталог</title>
 		<link rel="icon" href="images/favicon.png" type="image">
-		<link rel="stylesheet" href="css/bootstrap.css">
+		<link rel="stylesheet" href="CSS/bootstrap.css">
 		<link rel="stylesheet" href="css/style.css">
 		<script src="js/jquery-3.6.0.min.js"></script>
 		<script src="js/bootstrap.bundle.js"></script>
-		<script src="js/jquery.mask.js"></script>
-		<script src="js/order.js"></script>
-		<script src="js/calendar.js"></script>
 		<script src="js/scripts.js"></script>
 	</head>
 <body>
@@ -43,18 +40,18 @@
                         <span class="menupoint">
                             <a href="catalog1.html" class="line-point">Косметика</a>
                             <span>
-                                <a href="catalog2.html" class="pulldown-point">Для лица</a>
+                                <a href="product.html" class="pulldown-point">Для лица</a>
                                 <a href="#" class="pulldown-point">Для губ</a>
                                 <a href="#" class="pulldown-point">Для глаз</a>
                                 <a href="#" class="pulldown-point">Уход</a>
                             </span>
-						</span><span class="menupoint">
-                            <a href="#" class="line-point">Парфюмерия</a>
+							</span><span class="menupoint">
+							<a href="#" class="line-point">Парфюмерия</a>
                             <span>
 								<a href="#" class="pulldown-point">Для нее</a>
 								<a href="#" class="pulldown-point">Для него</a>
 							</span>
-						</span></span><span class="menupoint">
+                        </span><span class="menupoint">
                             <a href="#" class="line-point">Новинки</a>
                         </span><span class="menupoint">
                             <a href="#" class="line-point">Акции</a>
@@ -95,7 +92,7 @@
                             </div>
                             <div class="submenu_mover">v</div>
                         </div>
-                        <div class="catmenu_item">
+						<div class="catmenu_item">
                             <a href="#">Парфюмерия</a>
 							<div class="submenu">
                                 <a href="#">Для него</a>
@@ -105,75 +102,27 @@
                         </div>
                     </div>
                 </aside>
-				<div class="order">
-                    <h1>Корзина</h1>
-                    <p class="nihil"></p>
-                    <table class="table">
-                        <thead>
-                            <tr>
-                                <th scope="col"></th>
-                                <th scope="col">Наименование</th>
-                                <th scope="col">Количество</th>
-                                <th scope="col">Цена</th>
-                                <th scope="col">Сумма</th>
-                                <th scope="col">Удалить</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <th scope="row" data-tovar="5711">1</th>
-                                <td>Тональный крем</td>
-                                <td class="num">
-                                    <input type="number" value="1" pattern="^[0-9]*$">
-                                </td>
-                                <td class="rub">750</td>
-                                <td class="sum">750</td>
-                                <td class="del">
-                                    <div>+</div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <th scope="row" data-tovar="3432">2</th>
-                                <td>Карандаш для глаз</td>
-                                <td class="num">
-                                    <input type="number" value="1" pattern="^[0-9]*$">
-                                </td>
-                                <td class="rub">102</td>
-                                <td class="sum">102</td>
-                                <td class="del">
-                                    <div>+</div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <th scope="row" data-tovar="4846">3</th>
-                                <td>Помада</td>
-                                <td class="num">
-                                    <input type="number" value="1" pattern="^[0-9]*$">
-                                </td>
-                                <td class="rub">500</td>
-                                <td class="sum">500</td>
-                                <td class="del">
-                                    <div>+</div>
-                                </td>
-                            </tr>
-                        </tbody>
-                        <tfoot>
-                            <tr>
-                                <th scope="row">Итого</th>
-                                <td colspan="5" class="allsum">1352</td>
-                            </tr>
-                        </tfoot>
-                    </table>
-                    <form id="orderdata">
-                        <input type="text" id="name" placeholder="ФИО"><br>
-                        <input type="text" id="address" placeholder="Адрес"><br>
-                        <input type="text" id="email" placeholder="Эл.почта"><br>
-                        <input type="text" id="date" placeholder="Дата доставки"><br>
-                        <textarea id="comment" placeholder="Комментарии к заказу"></textarea><br>
-                        <button type="submit" id="sub_but">Отправить заказ</button>
-                    </form>
-                </div>
-            </main>
+				<div class="cat_block">
+					<div class="cat_unit">
+						<a href="product.html">
+							<img src="images/с2_1.jpg" alt="ton" class="cat_img">
+							<p>Тональный крем</p>
+						</a>
+					</div>
+					<div class="cat_unit">
+						<a href="#">
+							<img src="images/с2_2.jpg" alt="Пудра" class="cat_img">
+							<p>Пудра</p>
+						</a>
+					</div>
+					<div class="cat_unit">
+						<a href="#">
+							<img src="images/с2_3.jpg" alt="Румяна" class="cat_img">
+							<p>Румяна</p>
+						</a>
+					</div>
+				</div>
+			</main>	
 		<footer>
 			<div class="topfooter">
 				<div class="container">
@@ -203,6 +152,7 @@
 						</span>
 					</div>
 				</div>
+					
 				<div class="bottomfooter">
 						<div class="socials__link">						
 							<span class="instagram">
@@ -217,12 +167,8 @@
 						</div>
 					
 				</div>
+				</div>
 			</div>
 		</footer>
-	</div>
-		<div class="popup-desk">
-           <div class="calendar"></div>
-			</div>
-        </div>
 </body>
 </html>
