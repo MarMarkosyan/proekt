@@ -25,7 +25,7 @@ header {
     width: 100%;
 }
 .topheader {
-	background: #fff;
+	background: #E7CAC3;
 }
 .topheader .container{
 	flex-direction: row;
@@ -42,9 +42,10 @@ img {
 	padding: 0 0 0 20px;
 }
 .bottomheader {
-	background: #CCCCFF; 
+	background: #E7CAC3; 
 	height: 60px;
 	padding:0 0 0 300px;
+	border-top: #714444 1px solid;	
 }
 .topmenu{
 	text-align:center;
@@ -110,7 +111,7 @@ main .contacts {
     font: normal 18px/18px Arial;
     transform: rotate(45deg);
     transform-origin: center;
-    background: #fc7979;
+    background: #E7CAC3;
     color: white;
     cursor: pointer;
 }
@@ -174,6 +175,29 @@ main .container {
 p {
 	text-align: center;
 }
+.gallery_desk {
+    width: 530px;
+    float: left;
+}
+.main_image {
+    padding: 4px;
+    background: #E7CAC3; 
+    border: #714444 2px solid;
+    border-radius: 10px;
+}
+.gallery {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.small_image {
+    width: 190px;
+    height: 260px;
+    padding: 4px;
+    background: #E7CAC3;
+    border: #714444 2px solid;
+    border-radius: 5px;
+}
 /*footer*/
 footer {
 	flex:none;
@@ -186,8 +210,9 @@ footer {
     align-items: center;
 }
 .bottomfooter {
-	background: #CCCCFF; 
+	background: #E7CAC3; 
 	height: 30px;
+	border-top: #714444 1px solid;	
 }
 .bottomfooter .socials__link {
 	padding:0 0 0 40px;
@@ -196,10 +221,11 @@ footer {
 	flex-direction: row;
     justify-content: space-between;
     display: flex;
-    align-items: center;
+    align-items: center; 
 }
 .topfooter {
-	border-top: #6c757d 2px solid;	
+	border-top: #714444 1px solid;	
+	background: #E7CAC3; 
 }
 .contacts .span {
 	font-size:5px;
