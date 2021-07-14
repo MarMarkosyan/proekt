@@ -196,10 +196,11 @@ main .container {
 	width: 490px;
 }
 .main-image img {
-	padding-left: 57px;
+	padding-left: 75px;
 }
 .gallery {
 	width: 490px;
+	height: 165px;
     margin-top: 10px;
     display: flex;
     justify-content: space-between;
@@ -214,7 +215,7 @@ h5 {
     margin: 25px 8px 8px 8px;
 }
 .small-image img {
-	height: 200px;
+	height: 150px;
 	width: 150px;
 }
 /*footer*/
@@ -348,6 +349,11 @@ aside{
 }
 /* popup */
 
+.popup {
+	position: absolute;
+	border-radius: 20px;
+	background: #E7CAC3;
+}
 .popup-desk {
 	display: none;
 	position: fixed;
@@ -355,6 +361,7 @@ aside{
 	bottom: 0;
 	left: 0;
 	right: 0;
+	background: rgba(0,0,0,.3);
 }
 .div-popup {
 	position: absolute;
@@ -372,10 +379,10 @@ aside{
 	display: block;
 	z-index: 3;
 }
-.popup.lightbox{
-	background: white;
-	height: 500px;
-	width: 500px;
+.popup .lightbox {
+	background: #E7CAC3;
+	height: 430px;
+	width: 430px;
 }
 .lightbox {
 	left: 30px;
@@ -384,6 +391,11 @@ aside{
 	bottom: 30px;
 	width: auto;
 	margin: 0 auto;
+	border-radius: 10px;
+	padding: 30px;
+	box-sizing: border-box;
+	color: #714444;
+	border: 1px solid #6c757d;
 }
 .lightbox img {
 	max-width: 100%;
