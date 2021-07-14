@@ -88,6 +88,24 @@ a.pulldown-point {
 .pulldown-point:hover {
 	color: #CCCCFF;
 }
+.gorod p {
+	text-align: center;
+	margin-bottom: 10px;
+}
+.gorod button {
+	display:inline-block;
+	border: none;
+	color: white;
+	width: calc(50% - 10px);
+	border: 1px solid #6c757d;
+}
+gorod button:first-of-type {
+    margin: 0 10px 0 0;
+}
+.gorod button:last-of-type {
+    margin: 0 0 0 30px;
+}
+
 /*main*/
 main {
 	flex:1 0 auto;
@@ -121,6 +139,7 @@ main .container {
     width: 700px;
     margin: 0 auto;
 	display: flex;
+	background: #fcf0ed;
 }
 .slider {
     position: relative;
@@ -353,6 +372,10 @@ aside{
 	position: absolute;
 	border-radius: 20px;
 	background: #E7CAC3;
+	left: calc(50% - 150px);
+    top: 200px;
+    width: 300px;
+	
 }
 .popup-desk {
 	display: none;
@@ -362,6 +385,17 @@ aside{
 	left: 0;
 	right: 0;
 	background: rgba(0,0,0,.3);
+}
+.popup button {
+    margin: 0 35px 15px;
+    background: #714444;
+    border: none;
+    width: 70px;
+    height: 35px;
+    border-radius: 2px;
+}
+.popup gorod {
+	padding: 30px;
 }
 .div-popup {
 	position: absolute;
