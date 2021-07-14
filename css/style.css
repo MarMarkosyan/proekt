@@ -105,7 +105,9 @@ gorod button:first-of-type {
 .gorod button:last-of-type {
     margin: 0 0 0 30px;
 }
-
+#yourcity {
+	cursor:pointer;
+}
 /*main*/
 main {
 	flex:1 0 auto;
